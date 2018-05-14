@@ -30,15 +30,16 @@
         }
        nav{
          color: white;
-         margin:3px;
+         margin:0px;
          padding:3px;
        }
   
       .footer-basic {
         padding:40px 0;
         background-color:#262626;
-        position: relative;
+        position: absolute;
         bottom:0px;
+        height:200px;
         width:100%;
  
       }
@@ -248,13 +249,25 @@
         text-align:center;
 
       }
+       .my-5{
+          position:absolute;
+          top:200px;
+          width:100%;
+          
+        }
+     
       @media (max-width:767px) {
         .jumbotron{
           position: absolute;
           top:265px;
           max-width:92%;
         }
-
+      }
+@media (max-width:1002px){
+  .footer-basic{
+    position:absolute;
+    bottom:-830px;
+  }
     </style>
   </head>
   
@@ -279,7 +292,6 @@
          </nav>
       </div>
     <!-- SECOND NAV -->
-    <div class="homelink">
 <h1>INFO</h1>
 <div style="background-color:#ffffff;margin:7px;">
         <div class="container-nolink">
@@ -306,25 +318,33 @@
             </div>
         </div>
     </div>
-<!-- Section: Team v.4 -->
+<div class="main">
 <section class="my-5">
-
-  <!-- Section heading -->
-  <h2 class="h1-responsive font-weight-bold text-center my-5">Our amazing team</h2>
-  <!-- Section description -->
-  <p class="grey-text text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
-
   <!-- Grid row -->
   <div class="row">
 
     <!-- Grid column -->
     <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
-
-      <!-- Rotating card -->
-      <div class="card-wrapper">
-        <div id="card-1" class="card-rotating effect__click text-center w-100 h-100">
-          <!-- Front Side -->
-          <div class="face front">
+            <!-- Avatar -->
+            <div class="avatar mx-auto white">
+              <img src="script.png" class="rounded-circle" alt="First sample avatar image">
+            </div>
+            <!-- Content -->
+            <div class="card-body">
+              <h4 class="font-weight-bold mt-1 mb-3">Maria Kate</h4>
+          
+              <!-- Triggering button -->
+            </div>
+            <div class="card-body">
+              <!-- Content -->
+              <hr>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta. Blanditiis rem amet repellat, dolores nihil quae in mollitia asperiores ut rerum repellendus, voluptatum eum, officia laudantium quaerat?
+              </p>
+              <hr>
+              <!-- Triggering button -->
+            </div>
+    </div>
+    <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
             <!-- Avatar -->
             <div class="avatar mx-auto white">
               <img src="https://mdbootstrap.com/img/Photos/Avatars/img (10).jpg" class="rounded-circle img-fluid" alt="First sample avatar image">
@@ -335,11 +355,6 @@
           
               <!-- Triggering button -->
             </div>
-          </div>
-          <!-- Front Side -->
-          <!-- Back Side -->
-          <div class="face back">
-            <!-- Content -->
             <div class="card-body">
               <!-- Content -->
               <hr>
@@ -348,97 +363,31 @@
               <hr>
               <!-- Triggering button -->
             </div>
-          </div>
-          <!-- Back Side -->
-        </div>
-      </div>
-      <!-- Rotating card -->
-
     </div>
-    <!-- Grid column -->
-
-    <!-- Grid column -->
-    <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
-      <!-- Rotating card -->
-      <div class="card-wrapper">
-        <div id="card-2" class="card-rotating effect__click text-center w-100 h-100">
-          <!-- Front Side -->
-          <div class="face front">
+        <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
             <!-- Avatar -->
             <div class="avatar mx-auto white">
-              <img src="https://mdbootstrap.com/img/Photos/Avatars/img (20).jpg" class="rounded-circle" alt="Second sample avatar image">
+              <img src="https://mdbootstrap.com/img/Photos/Avatars/img (10).jpg" class="rounded-circle img-fluid" alt="First sample avatar image">
             </div>
             <!-- Content -->
             <div class="card-body">
-              <h4 class="font-weight-bold mt-1 mb-3">Anna Deynah</h4>
-             
+              <h4 class="font-weight-bold mt-1 mb-3">Maria Kate</h4>
+          
               <!-- Triggering button -->
             </div>
-          </div>
-          <!-- Front Side -->
-          <!-- Back Side -->
-          <div class="face back">
-            <!-- Content -->
             <div class="card-body">
               <!-- Content -->
-            
               <hr>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta. Blanditiis rem amet repellat, dolores nihil quae in mollitia asperiores ut rerum repellendus, voluptatum eum, officia laudantium quaerat?
               </p>
               <hr>
               <!-- Triggering button -->
             </div>
-          </div>
-          <!-- Back Side -->
-        </div>
-      </div>
-      <!-- Rotating card -->
     </div>
-    <!-- Grid column -->
-
-    <!-- Grid column -->
-    <div class="col-lg-4 col-md-12">
-      <!-- Rotating card -->
-      <div class="card-wrapper">
-        <div id="card-3" class="card-rotating effect__click text-center w-100 h-100">
-          <!-- Front Side -->
-          <div class="face front">
-            <!-- Avatar -->
-            <div class="avatar mx-auto white">
-              <img src="https://mdbootstrap.com/img/Photos/Avatars/img (8).jpg" class="rounded-circle img-fluid" alt="Third sample avatar image">
-            </div>
-            <!-- Content -->
-            <div class="card-body">
-              <h4 class="font-weight-bold mt-1 mb-3">John Doe</h4>
-      
-              <!-- Triggering button -->
-            </div>
           </div>
-          <!-- Front Side -->
-          <!-- Back Side -->
-          <div class="face back">
-            <!-- Content -->
-            <div class="card-body">
-              <!-- Content -->
-             
-              <hr>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quae, dolores dicta. Blanditiis rem amet repellat, dolores nihil quae in mollitia asperiores ut rerum repellendus, voluptatum eum, officia laudantium quaerat?
-              </p>
-              <hr>
-            </div>
-          </div>
-          <!-- Back Side -->
         </div>
-      </div>
-      <!-- Rotating card -->
-    </div>
-    <!-- Grid column -->
-
-  </div>
-  <!-- Grid row -->
-
 </section>
-<!-- Section: Team v.4 -->
+</div>
             
     <!-- FOOTER -->  
     <!-- Optional JavaScript -->
