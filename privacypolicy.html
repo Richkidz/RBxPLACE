@@ -2,244 +2,302 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>RBX.HIRE</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>RBX.HIRE</title>
+    
     <style type="text/css">
         body{
         background-color:#ffffff;
+        max-width:100%;
         }
         h1{
-          color:#3a3a3a;
           text-align:center;
           font-family: 'Black Han Sans', sans-serif;
           letter-spacing: 6px;
-          font-size: 50px;
-       
+          font-size:50px;
         }
-        row{
+        .row{
           text-align:center;
           font-family: arial;
+          margin:0px;
         }
        nav{
          color: white;
-         margin:3px;
          padding:3px;
        }
-  
-.footer-basic {
-  padding:40px 0;
-  background-color:#262626;
-  position: absolute;
-  bottom:0px;
-  width:100%;
+      .homelink a{
+        color:rgb(0,0,0);
+      }
+      .footer-basic {
+        padding:40px 0;
+        background-color:#262626;
+        position: relative;
+        bottom:0px;
+        width:100%;
  
-}
+      }
 
-.footer-basic ul {
-  padding:0;
-  list-style:none;
-  text-align:center;
-  font-size:18px;
-  line-height:1.6;
-  margin-bottom:0;
-}
-
-.footer-basic li {
-  padding:0 10px;
-}
-
-.footer-basic ul a {
-  color:white;
-  text-decoration:none;
-  opacity:0.8;
-}
-
-.footer-basic ul a:hover {
-  opacity:1;
-}
-
-.footer-basic .social {
-  text-align:center;
-  padding-bottom:25px;
-}
-
-.footer-basic .social > a {
-  font-size:30px;
-  width:40px;
-  height:40px;
-  line-height:40px;
-  display:inline-block;
-  text-align:center;
-  border-radius:75%;
-  border:1px solid #ccc;
-  margin:0 8px;
-  color:#c9c9c9;
-  opacity:0.75;
-}
-
-.footer-basic .social > a:hover {
-  opacity:0.9;
-}
-
-.footer-basic .copyright {
-  margin-top:15px;
-  text-align:center;
-  font-size:13px;
-  color:#aaaaaa;
-  margin-bottom:0;
-}
- nav li {
-     margin:-3px;
-     padding:2px;
- }
-.navigation-clean-search {
-  background:#fff;
-  padding-top:.75rem;
-  padding-bottom:.75rem;
-  color:#333;
-  border-radius:0;
-  box-shadow:none;
-  border:none;
-  margin-bottom:0;
-}
-
-@media (min-width:768px) {
-  .navigation-clean-search {
-    padding-top:1rem;
-    padding-bottom:1rem;
-  }
-}
-
-.navigation-clean-search .navbar-brand {
-  font-weight:bold;
-  color:inherit;
-}
-
-.navigation-clean-search .navbar-brand:hover {
-  color:#222;
-}
-
-.navigation-clean-search .navbar-toggler {
-  border-color:#ddd;
-}
-
-.navigation-clean-search .navbar-toggler:hover, .navigation-clean-search .navbar-toggler:focus {
-  background:none;
-}
-
-.navigation-clean-search .navbar-toggler {
-  color:#888;
-}
-
-.navigation-clean-search .navbar-collapse, .navigation-clean-search .form-inline {
-  border-top-color:#ddd;
-}
-
-.navigation-clean-search .navbar-nav a.active, .navigation-clean-search .navbar-nav > .show > a {
-  background:none;
-  box-shadow:none;
-}
-
-.navigation-clean-search.navbar-light .navbar-nav a.active, .navigation-clean-search.navbar-light .navbar-nav a.active:focus, .navigation-clean-search.navbar-light .navbar-nav a.active:hover {
-  color:#8f8f8f;
-  box-shadow:none;
-  background:none;
-  pointer-events:none;
-}
-
-.navigation-clean-search.navbar .navbar-nav .nav-link {
-  padding-left:18px;
-  padding-right:18px;
-}
-
-.navigation-clean-search.navbar-light .navbar-nav .nav-link {
-  color:#465765;
-}
-
-.navigation-clean-search.navbar-light .navbar-nav .nav-link:focus, .navigation-clean-search.navbar-light .navbar-nav .nav-link:hover {
-  color:#37434d !important;
-  background-color:transparent;
-}
-
-.navigation-clean-search .action-button, .navigation-clean-button .action-button:active {
-  background:#56c6c6;
-  border-radius:20px;
-  font-size:inherit;
-  color:#fff !important;
-  box-shadow:none;
-  border:none;
-  text-shadow:none;
-  padding:8px 20px;
-  transition:background-color 0.25s;
-}
-
-.navigation-clean-search .action-button:hover, .navigation-clean-search .action-button:focus {
-  background:#66d7d7;
-}
-
-.navigation-clean-search .form-inline label {
-  color:#ccc;
-}
-
-.navigation-clean-search .form-inline .search-field {
-  background:none;
-  border:none;
-  border-bottom:1px solid transparent;
-  border-radius:0;
-  color:#ccc;
-  box-shadow:none;
-  color:inherit;
-  transition:border-bottom-color 0.3s;
-}
-
-@media (max-width:767px) {
-  .navigation-clean-search .form-inline .search-field {
-    display:inline-block;
-    width:80%;
-  }
-}
-
-.navigation-clean-search .form-inline .search-field:focus {
-  border-bottom:1px solid #ccc;
-}
-
-.jumbotron{
-  top:200px;
- position:absolute;
- width:100%;
+      .footer-basic ul {
+        padding:0;
+        list-style:none;
+        text-align:center;
+        font-size:18px;
+        line-height:1.6;
+        margin-bottom:0;
+      }
+      
+      .footer-basic li {
+        padding:0 10px;
+      }
+      
+      .footer-basic ul a {
+        color:white;
+        text-decoration:none;
+        opacity:0.8;
+      }
+      
+      .footer-basic ul a:hover {
+        opacity:1;
+      }
+      
+      .footer-basic .social {
+        text-align:center;
+        padding-bottom:25px;
+      }
+      
+      .footer-basic .social > a {
+        font-size:30px;
+        width:40px;
+        height:40px;
+        line-height:40px;
+        display:inline-block;
+        text-align:center;
+        border-radius:75%;
+        border:1px solid #ccc;
+        margin:0 8px;
+        color:#c9c9c9;
+        opacity:0.75;
+      }
+      
+      .footer-basic .social > a:hover {
+        opacity:0.9;
+      }
+      
+      .footer-basic .copyright {
+        margin-top:15px;
+        text-align:center;
+        font-size:13px;
+        color:#aaaaaa;
+        margin-bottom:0;
+      }
+       nav li {
+           margin:-3px;
+           padding:2px;
+       }
+      .navigation-clean-search {
+        background:#fff;
+        padding-top:.75rem;
+        padding-bottom:.75rem;
+        color:#333;
+        border-radius:0;
+        box-shadow:none;
+        border:none;
+        margin-bottom:0;
+      }
+      
+      @media (min-width:768px) {
+        .navigation-clean-search {
+          padding-top:1rem;
+          padding-bottom:1rem;
+        }
+      }
+      
+      .navigation-clean-search .navbar-brand {
+        font-weight:bold;
+        color:inherit;
+        
+      }
+      
+      .navigation-clean-search .navbar-brand:hover {
+        color:#222;
+      }
+      .navigation-clean-search .navbar-toggler {
+        border-color:#ddd;
+      }
+      
+      .navigation-clean-search .navbar-toggler:hover, .navigation-clean-search .navbar-toggler:focus {
+        background:none;
+      }
+      
+      .navigation-clean-search .navbar-toggler {
+        color:#888;
+      }
+      
+      .navigation-clean-search .navbar-collapse, .navigation-clean-search .form-inline {
+        border-top-color:#ddd;
+      }
+      
+      .navigation-clean-search .navbar-nav a.active, .navigation-clean-search .navbar-nav > .show > a {
+        background:none;
+        box-shadow:none;
+      }
+      
+      .navigation-clean-search.navbar-light .navbar-nav a.active, .navigation-clean-search.navbar-light .navbar-nav a.active:focus, .navigation-clean-search.navbar-light .navbar-nav a.active:hover {
+        color:#8f8f8f;
+        box-shadow:none;
+        background:none;
+        pointer-events:none;
+      }
+      
+      .navigation-clean-search.navbar .navbar-nav .nav-link {
+        padding-left:18px;
+        padding-right:18px;
+      }
+      
+      .navigation-clean-search.navbar-light .navbar-nav .nav-link {
+        color:#465765;
+      }
+      
+      .navigation-clean-search.navbar-light .navbar-nav .nav-link:focus, .navigation-clean-search.navbar-light .navbar-nav .nav-link:hover {
+        color:#37434d !important;
+        background-color:transparent;
+      }
+      
+      .navigation-clean-search .action-button, .navigation-clean-button .action-button:active {
+        background:#56c6c6;
+        border-radius:20px;
+        font-size:inherit;
+        color:#fff !important;
+        box-shadow:none;
+        border:none;
+        text-shadow:none;
+        padding:8px 20px;
+        transition:background-color 0.25s;
+      }
+      
+      .navigation-clean-search .action-button:hover, .navigation-clean-search .action-button:focus {
+        background:#66d7d7;
+      }
+      
+      .navigation-clean-search .form-inline label {
+        color:#ccc;
+      }
+      
+      .navigation-clean-search .form-inline .search-field {
+        background:none;
+        border:none;
+        border-bottom:1px solid transparent;
+        border-radius:0;
+        color:#ccc;
+        box-shadow:none;
+        color:inherit;
+        transition:border-bottom-color 0.3s;
+      }
+      
+      @media (max-width:767px) {
+        .navigation-clean-search .form-inline .search-field {
+          display:inline-block;
+          width:80%;
+        }
+      }
+      
+      .navigation-clean-search .form-inline .search-field:focus {
+        border-bottom:1px solid #ccc;
+      }
+      
+      .jumbotron{
+      margin:20px;
+      width:98%;
+      position:absolute;
+      top:190px;
+      opacity:1;
+      }
+      .container-nolink a{
+        color:#3a3a3a;
+        max-width:100%;
+      }
+      .col-md-4:hover{
+        border: 2px solid black;
+      }
+      .card-body{
+          padding:0px;}
+      .avatar {
+          margin:4px;
+      }
+      a:hover{
+        text-decoration:none;
+      }
+      .fa {
+        position:relative;
+        bottom:2px;
+      }
+      .fa fa-snapchat {
+        font-size:35px;
+      }
+      .col-md-4{
+        width:100%;
+        text-align:center;
+      }
+      .col-md-4 a{ 
+        cursor: pointer; 
   
+        }
+img {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  height:167px;
 }
-.container-nolink a{
-  color:#3a3a3a;
+
+@media (min-width: 768px) {
+  div {
+  }
 }
-.col-md-4:hover{
-  border: 2px solid black;
-  width:100%;
+
+.btn.btn-secondary.btn-sm.d-block {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:6px;
+  width:250px;
 }
-.card-body{
-    padding:0px;}
-.avatar {
-    margin:4px;
+
+body {
 }
-a:hover{
-  text-decoration:none;
+
+@media (min-width: 992px) {
+  .btn.btn-secondary.btn-sm.d-block {
+  }
 }
-.fa {
-  position:relative;
-  bottom:2px;
+
+@media (max-width: 992px) {
+  .btn.btn-secondary.btn-sm.d-block {
+    width:165px;
+  }
 }
-.fa fa-snapchat {
-  font-size:35px;
+
+@media (max-width: 768px) {
+  .btn.btn-secondary.btn-sm.d-block {
+    width:223px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+  }
 }
-.col-md-4{
-  width:100%;
+
+@media (min-width: 992px) {
+  .btn.btn-secondary.btn-sm.d-block {
+    width:225px;
+  }
 }
+
+
     </style>
   </head>
   <body>
@@ -258,52 +316,85 @@ a:hover{
                         <li class="nav-item" role="presentation"><a class="nav-link" href="login.html" style="color:#ffffff;">Log In</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="signup.html" style="color:#ffffff;">Sign Up</a></li>
                     </ul>
+              </div>
             </div>
-    </div>
-    </nav>
-    </div>
+         </nav>
+      </div>
     <!-- SECOND NAV -->
-<h1>RBX.HIRE</h1>
+    <div class="homelink">
+  <a href="homepage.html">
+<center> <h1>RBX.HIRE</h1></center>
+  </a>
+</div>
     <div style="background-color:#ffffff;margin:7px;">
         <div class="container-nolink">
             <div class="row">
-              
-                <a href="hire-page.html"><div class="col-md-4" style="background-color:#ffffff;">
+            
+            
+                 <div class="col-md-4" onclick="location.href='hire-page.html';" onmouseover="" style="cursor: pointer;">
                      <p class="text-center" style="font-size:20px;cursive;color:rgb(0,0,0);background-color:#ffffff;">Hire</p>
-                </a>
-                </div></a>
+                </div>
+               
                
             
                 
-                <div class="col-md-4" style="background-color:#ffffff;"><a href="roblux-page.html">
+                <div class="col-md-4" onclick="location.href='robux-page.html';" onmouseover="" style="cursor: pointer;">
                     <p class="text-center" style="font-size:20px;cursive;color:rgb(0,0,0);background-color:#ffffff;">Robux</p>
-                </a>
                 </div>
                
                 
             
-                <div class="col-md-4" style="background-color:#ffffff;color:rgb(0,0,0);"><a href="info-page.html">
+                <div class="col-md-4" onclick="location.href='info-page.html';" onmouseover="" style="cursor: pointer;">
                     <p class="text-center" style="font-size:20px;cursive;color:rgb(0,0,0);">Info</p>
-                </a></div>
+                </div>
                 
             </div>
         </div>
     </div>
-   <h2>Privacy Policy</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriuredolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros etaccumsan et iusto odio dignissim qui blandit praesent luptatum  zzril delenit augue duis dolore te feugait nulla facilisi.
-      Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes
-      demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas
-      humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriuredolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros etaccumsan et iusto odio dignissim qui blandit praesent luptatum  zzril delenit augue duis dolore te feugait nulla facilisi.
-      Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes
-      demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas
-      humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriuredolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros etaccumsan et iusto odio dignissim qui blandit praesent luptatum  zzril delenit augue duis dolore te feugait nulla facilisi.
-      Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes
-      demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas
-      humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-   
-
-            
-    <!-- FOOTER -->  
+    <!-- WELCOME MESSAGE -->
+    
+    
+    
+    
+     <div style="margin:10px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png"><button class="btn btn-secondary btn-sm d-block" type="button">Button</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png"><button class="btn btn-secondary btn-sm d-block" type="button">Button</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png"><button class="btn btn-secondary btn-sm d-block" type="button">Button</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png"><button class="btn btn-secondary btn-sm d-block" type="button">Button</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png"><button class="btn btn-secondary btn-sm d-block" type="button">Button</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png"><button class="btn btn-secondary btn-sm d-block" type="button">Button</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png"><button class="btn btn-secondary btn-sm d-block" type="button">Button</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png"><button class="btn btn-secondary btn-sm d-block" type="button">Button</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png"><button class="btn btn-secondary btn-sm d-block" type="button">Button</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png"><button class="btn btn-secondary btn-sm d-block" type="button">Button</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png"><button class="btn btn-secondary btn-sm d-block" type="button">Button</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png"><button class="btn btn-secondary btn-sm d-block" type="button">Button</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png"><button class="btn btn-secondary btn-sm d-block" type="button">Button</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png"><button class="btn btn-secondary btn-sm d-block" type="button">Button</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png"><button class="btn btn-secondary btn-sm d-block" type="button">Button</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png"><button class="btn btn-secondary btn-sm d-block" type="button">Button</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png"><button class="btn btn-secondary btn-sm d-block" type="button">Button</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png"><button class="btn btn-secondary btn-sm d-block" type="button">Button</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png"><button class="btn btn-secondary btn-sm d-block" type="button">Button</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png"><button class="btn btn-secondary btn-sm d-block" type="button">Button</button></div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     <!-- FOOTER -->  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -324,6 +415,5 @@ a:hover{
             <p class="copyright">Rbx.Hire © Copyright 2018</p>
         </footer>
     </div>
-        </footer>
   </body>
 </html>
