@@ -2,21 +2,112 @@
 <html>
 
 <head>
- <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-      <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
+      
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/solid.css" integrity="sha384-Rw5qeepMFvJVEZdSo1nDQD5B6wX0m7c5Z/pLNvjkB14W6Yki1hKbSEQaX9ffUbWe" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/fontawesome.css" integrity="sha384-GVa9GOgVQgOk+TNYXu7S/InPTfSDTtBalSgkgqQ7sCik56N9ztlkoTr2f/T44oKV" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Han+Sans">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/solid.css" integrity="sha384-Rw5qeepMFvJVEZdSo1nDQD5B6wX0m7c5Z/pLNvjkB14W6Yki1hKbSEQaX9ffUbWe" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/regular.css" integrity="sha384-EWu6DiBz01XlR6XGsVuabDMbDN6RT8cwNoY+3tIH+6pUCfaNldJYJQfQlbEIWLyA" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/fontawesome.css" integrity="sha384-GVa9GOgVQgOk+TNYXu7S/InPTfSDTtBalSgkgqQ7sCik56N9ztlkoTr2f/T44oKV" crossorigin="anonymous">
- <title>RBX.HIRE</title>
+
+     <title>RBX.HIRE</title>
+   
     <style type="text/css">
-      body{
+        .article-list {
+  color:#313437;
+  background-color:#fff;
+}
+
+.article-list p {
+  color:#7d8285;
+}
+
+.article-list h2 {
+  font-weight:bold;
+  margin-bottom:40px;
+  padding-top:40px;
+  color:inherit;
+}
+
+@media (max-width:767px) {
+  .article-list h2 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+.article-list .intro {
+  font-size:16px;
+  max-width:500px;
+  margin:0 auto;
+}
+
+.article-list .intro p {
+  margin-bottom:0;
+}
+
+.article-list .articles {
+  padding-bottom:40px;
+}
+
+.article-list .item {
+  padding-top:50px;
+  min-height:425px;
+  text-align:center;
+}
+
+.article-list .item .name {
+  font-weight:bold;
+  font-size:16px;
+  margin-top:20px;
+  color:inherit;
+}
+
+.article-list .item .description {
+  font-size:14px;
+  margin-top:15px;
+  margin-bottom:0;
+}
+
+.article-list .item .action {
+  font-size:24px;
+  width:24px;
+  margin:22px auto 0;
+  line-height:1;
+  display:block;
+  color:#4f86c3;
+  opacity:0.85;
+  transition:opacity 0.2s;
+  text-decoration:none;
+}
+
+.article-list .item .action:hover {
+  opacity:1;
+}
+
+@media (min-width: 768px) {
+  .description {
+    word-wrap:break-word;
+  }
+}
+
+.description {
+  word-wrap:break-word;
+}
+
+.img:hover{
+text-decoration: underline;
+border: 5px black;
+}
+ body{
         background-color:#ffffff;
         max-width:100%;
+        text-align:justify;
         }
         h1{
           text-align:center;
@@ -226,6 +317,7 @@
       }
       .col-md-4:hover{
         border: 2px solid black;
+        
       }
       .card-body{
           padding:0px;}
@@ -329,23 +421,30 @@
   opacity:1;
 }
 
-@media (min-width: 768px) {
+@media (min-width:1206px) {
   .description {
-    word-wrap:break-word;
+word-break: break-all;
+    
+
   }
 }
 
 .description {
-  word-wrap:break-word;
-}
+word-break: break-all;
 
+}
+.description{
+  width:100%;
+}
 
     </style>
 </head>
+ 
+
 
 <body>
-  
-    <!-- FIRST NAV -->
+
+ <!-- FIRST NAV -->
      <div>
         <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search" style=background-color:#262626;>
             <div class="container"><a class="navbar-brand" href="homepage.html" style="color:rgb(255,255,255);">RBX.HIRE</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
@@ -364,6 +463,7 @@
             </div>
          </nav>
       </div>
+    <!-- SECOND NAV -->
     <!-- SECOND NAV -->
     <!-- SECOND NAV -->
 <div class="homelink">
@@ -389,48 +489,48 @@
                
                 
             
-                <div class="col-md-4" onclick="location.href='info-page.html';" onmouseover="" style="cursor: pointer;">
-                    <p class="text-center" style="font-size:20px;cursive;color:rgb(0,0,0);">Info</p>
+                <div class="col-md-4" onclick="location.href='about-page.html';" onmouseover="" style="cursor: pointer;">
+                    <p class="text-center" style="font-size:20px;cursive;color:rgb(0,0,0);">About</p>
                 </div>
                 
             </div>
         </div>
     </div>
     <!-- WELCOME MESSAGE -->
-    
     <div class="article-list">
         <div class="container">
             <div class="row articles">
                 <div class="col-sm-6 col-md-3 col-xl-12 item"><a href="#"><img class="img-fluid" src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png" style="width:250px;"></a>
-                    <h3 class="name">Article Title</h3>
+                    <h3 class="name">Builder Name</h3>
                     <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.fsssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</p><a href="#"
                         class="action"><i class="fas fa-arrow-circle-right"></i></a></div>
                 <div class="col-sm-6 col-md-3 col-xl-12 item"><a href="#"><img class="img-fluid" src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png" style="width:250px;"></a>
-                    <h3 class="name">Article Title</h3>
+                    <h3 class="name">Builder Name</h3>
                     <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.fsssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</p><a href="#"
                         class="action"><i class="fas fa-arrow-circle-right"></i></i></a></div>
                 <div class="col-sm-6 col-md-3 col-xl-12 item"><a href="#"><img class="img-fluid" src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png" style="width:250px;"></a>
-                    <h3 class="name">Article Title</h3>
+                    <h3 class="name">Builder Name</h3>
                     <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.fsssssssssssssssssssssssssssssssssssssssssssssssssssssssssss</p><a href="#"
                         class="action"><i class="fas fa-arrow-circle-right"></i></a></div>
             </div>
         </div>
-  </div>
-        <!-- FOOTER -->  
+    </div>
+   
+ <!-- FOOTER -->  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
    <div class="footer-basic" style="color:rgb(255,255,255);padding:20px ;">
-        <footer>
+       <footer>
           <!-- SOCIAL MEDIA -->
             <div class="social"><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a><a href="https://www.snapchat.com/"><i class="fa fa-snapchat"></i></a><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></div>
             <ul class="list-inline">
 
                 <li class="list-inline-item"><a href="homepage.html">Home</a></li>
                 <li class="list-inline-item"><a href="Services.html">Services</a></li>
-                <li class="list-inline-item"><a href="About.html">About</a></li>
+                <li class="list-inline-item"><a href="info.html">Info</a></li>
                 <li class="list-inline-item"><a href="terms.html">Terms</a></li>
                 <li class="list-inline-item"><a href="privacypolicy.html">Privacy Policy</a></li>
             </ul>
