@@ -20,7 +20,6 @@
         text-align:justify;
         }
         h1{
-          text-align:center;
           font-family: 'Black Han Sans', sans-serif;
           letter-spacing: 6px;
           font-size: 50px;
@@ -275,7 +274,7 @@ p{
         fill:#000000;
         stroke-dasharray: 1800;
         opacity: 10;
-        animation: animate 5s cubic-bezier(0,.25,1,.1); 
+        animation: animate 5s cubic-bezier(0,.45,1,.1); 
     }
 
     @keyframes animate{
@@ -315,7 +314,7 @@ p{
 }
 .jumbo-bg {
   background-attachment: fixed;  
-  background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("https://github.com/eneax/doosan-baseball/blob/master/assets/img/stadium.jpeg?raw=true");
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.1)), url("https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -378,7 +377,7 @@ li p {
 .main-pos {
   margin-left: 2em !important;
   z-index: 3000;
-  /*background-image: url('https://dl.dropbox.com/u/32649907/imgs/shadow.png');*/
+  background-image: url('https://dl.dropbox.com/u/32649907/imgs/shadow.png');
 }
 
 .left-pos {
@@ -414,15 +413,211 @@ li p {
   top: 20em;
 
 }
-.button
+.card-body{
+  margin:0px;
+  padding:0px;
+}
+
+    
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+*{
+  box-sizing: border-box;
+}
+
+
+}
+
+
+}
+
+.card--1 .card__img, .card--1 .card__img--hover {
+    background-image: url('');
+}
+
+.card--2 .card__img, .card--2 .card__img--hover {
+    background-image: url('https://images.pexels.com/photos/585418/pexels-photo-585418.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+}
+.card--3 .card__img, .card--3 .card__img--hover {
+    background-image: url('img/roobux.png');
+}
+.card--4 .card__img, .card--4 .card__img--hover {
+    background-image: url('https://images.pexels.com/photos/241544/pexels-photo-241544.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+}
+.card--5 .card__img, .card--5 .card__img--hover {
+    background-image: url('https://images.pexels.com/photos/814544/pexels-photo-814544.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+}
+.card--6 .card__img, .card--6 .card__img--hover {
+    background-image: url('https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+}
+
+
+
+.card__img {
+  visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 235px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+  
+}
+
+.card__info-hover {
+    position: absolute;
+    padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+}
+
+.card__img--hover {
+  transition: 0.2s all ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+  position: absolute;
+    height: 235px;
+  border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+top: 0;
+  
+}
+.card {
+  margin-right: 0px;
+  transition: all .4s cubic-bezier(0.175, 0.7, 2, 1);
+  background-color: #fff;
+    width: 33.3%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+}
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+    transform: scale(1.10, 1.10);
+}
+
+.card__info {
+z-index: 2;
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+border-bottom-right-radius: 12px;
+   padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+  text-align: left;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+  color: #3f3f45;
+  opacity: 0.9;
+}
+
+.card__category:hover{
+  opacity: 1
+}
+.card__title {
+  display: block;
+  text-align: left;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+}
+
+.card__by {
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.card__author {
+    font-weight: 600;
+    text-decoration: none;
+    color: #AD7D52;
+}
+
+.card:hover .card__img--hover {
+    height: 100%;
+    opacity: 0.3;
+}
+
+.card:hover .card__info {
+    background-color: transparent;
+    position: relative;
+}
+
+.card:hover .card__info-hover {
+    opacity: 1;
+}
+
+
+
+.card--1
+{
+  width: 300px;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+}
+.card--2{
+    width: 300px;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    margin-bottom: 35px;
+}
+.card--3{
+    width: 300px;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    margin-bottom: 35px;
+}
+.card--4{
+    width: 300px;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    margin-bottom: 55px;
+}
+.card--5{
+    width: 300px;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    margin-bottom: 55px;
+}
+.card--6{
+    width: 300px;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    margin-bottom: 35px;
+}
  </style>
 </head>
 
 <body>
  <!-- FIRST NAV -->
      <div>
-        <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search" style="background-color:#262626;">
-            <div class="container"><a class="navbar-brand" href="homepage.html" style="color:rgb(255,255,255);">RBX.HIRE</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search" style="background-color:#262626;" >
+            <div class="container"><a class="navbar-brand" href="homefinal.html" style="color:rgb(255,255,255);">RBX.HIRE</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div
                     class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav mr-auto"></ul>
@@ -516,15 +711,14 @@ li p {
             <div class="row">
                 <div class="col-md-6">
                    
-
-
-    <a><p class="text-center"> Robux</p></a>
+                   
+    <a onclick="location.href='robux-page.html';"><p class="text-center">Robux</p></a>
   
 
 
                 </div>
-                <div class="col-md-6">
-                    <p class="text-center">About</p>
+                <div class="col-md-6"  onclick="location.href='builder.html';">
+                    <p class="text-center">Hire</p>
                 </div>
             
             </div>
@@ -537,8 +731,8 @@ li p {
   <div class="container">
      <div class="jump">
     <h1 class="display-4 mt-3">RBX</h1>
-    <p>Here at RBX.HIRE our purpose is to connect the buyer to the seller. Looking to buy robux? An item? RBX.HIRE can point you toward a seller. We can even provide a scripter or builder to hire. See the <a href="about-page.html">Sign UP</a> page to join.</p>
-    <button type="button" class="mt-4 btn btn-lg btn-jumbo">Sign Up</button>
+    <p>Here at RBX.HIRE our purpose is to connect the buyer to the seller. Looking to buy robux? An item? RBX.HIRE can point you toward a seller. We can even provide a scripter or builder to hire. See the <a href="about-page.html">Sign Up</a> page to join.</p>
+    <button type="button" class="mt-4 btn btn-lg btn-jumbo" onclick="location.href='signup.html';">Sign Up</button>
   </div>
   </div>
 </div>
@@ -548,9 +742,9 @@ li p {
 
     <div class="col-10 text-center mx-auto">
       <div class="maincon">
-      <h2>LOREM IPSUM DOLOR SIT AMET</h2>
+      <h2>Welcome</h2>
       <hr class="col-1">
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      <p class="lead">Our priority is you and having the best, simple, and fast transition between the client and the seller</p>
     </div>
   </div>
 
@@ -564,87 +758,109 @@ li p {
 <!--Script-->
  
 
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+<div class="card card--6">
+  <div class="card__img"></div>
+  <a href="#" class="card_link">
+     <div class="card__img--hover"></div>
+   </a>
+  <div class="card__info">
+    <span class="card__title">Scripter</span>
+    <h3 class="card__category">Create a system for writing simple scripts that generate web pages that are able to operate independently of other hardware or software.</h3>
+  </div>
+</div>
+
+
+
+
+        </div>
+        <div class="col-lg-4">
+           <div class="feature">
+         <div class="card card--2">
+  <div class="card__img"></div>
+  <a href="#" class="card_link">
+     <div class="card__img--hover"></div>
+   </a>
+  <div class="card__info">
+    <span class="card__title"> Builder</span>
+    <h3 class="card__category">Roblox's in-game currency that allowes the player to buy diffrent skins. The currency runs the Roblox  economy.</h3>
+  </div>
+</div>   
+</div>
+        </div>
+
+
+
+
+  <div class="col-lg-4">
+           <div class="feature">
+         <div class="card card--3">
+  <div class="card__img"></div>
+  <a href="#" class="card_link">
+     <div class="card__img--hover"></div>
+   </a>
+  <div class="card__info">
+    <span class="card__title">Robux</span>
+    <h3 class="card__category">Roblox's in-game currency that allowes the player to buy diffrent skins. The currency runs the Roblox  economy.</h3>
+  </div>
+</div>   
+</div>
+        </div>
+
+
+
+
+</div>
+<div class="row">
+        <div class="col-lg-6">
+           <div class="feature">
+         <div class="card card--4">
+  <div class="card__img"></div>
+  <a href="#" class="card_link">
+     <div class="card__img--hover"></div>
+   </a>
+  <div class="card__info">
+    <span class="card__title">Reseller</span>
+    <h3 class="card__category">Roblox's in-game currency that allowes the player to buy diffrent skins. The currency runs the Roblox  economy.</h3>
+  </div>
+</div>   
+</div>
+
+
+
+        </div>
+      <!--second lg-->
+        <div class="col-lg-6">    
+ <div class="feature">
+         <div class="card card--5">
+  <div class="card__img"></div>
+  <a href="#" class="card_link">
+     <div class="card__img--hover"></div>
+   </a>
+  <div class="card__info">
+    <span class="card__title">Economy</span>
+    <h3 class="card__category">Roblox's in-game currency that allowes the player to buy diffrent skins. The currency runs the Roblox  economy.</h3>
+  </div>
+</div>   
+</div>
+
+
+        </div>
+    </div>
+</div>
+
+
+
 <!--robux-->
 
 <!-- FOOTER -->  
  <!-- Grid column -->
- <div class="row">
-    <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
-            <!-- Avatar -->
-            <div class="script">
-              <img src="img/script.png" class="rounded-circle" alt="First sample avatar image" style="width:250px">
-            </div>
-            <!-- Content -->
-            <div class="card-body">
-              <h4 class="font-weight-bold mt-1 mb-3">Scripter</h4>
-          
-              <!-- Triggering button -->
-            </div>
-            <div class="card-body">
-              <!-- Content -->
-              <hr>
-              <div class="script1">
-              <p style="font-size:19px">Scriptor's purpose is to create a system for writing simple scripts that generate web pages that are able to operate independently of other hardware or software.
-              </p>
-              <hr>
-            </div>
-              <!-- Triggering button -->
-            </div>
-    </div>
-    
-
-    <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
-            <!-- Avatar -->
-            <div class="robux">
-              <img src="img/script.png" class="rounded-circle img-fluid" alt="First sample avatar image" style="width:250px">
-            </div>
-            <!-- Content -->
-            <div class="card-body">
-              <h4 class="font-weight-bold mt-1 mb-3">Robux</h4>
-          
-              <!-- Triggering button -->
-            </div>
-            <div class="card-body">
-              <!-- Content -->
-              <div class="robux1">
-              <hr>
-              <p style="font-size:19px">Website builders are tools that typically allow the construction of websites without manual code editing. You need a Builder to launch a website quickly and you would rather let someone else handle site updates. 
-              </p>
-              <hr>
-            </div>
-              <!-- Triggering button -->
-            </div>
-    </div>
-     
-
-        <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
-            <!-- Avatar -->
-            <div class="reseller">
-              <img src="img/script.png" class="rounded-circle img-fluid" alt="First sample avatar image" style="width:250px">
-            </div>
-            <!-- Content -->
-            <div class="card-body">
-              <h4 class="font-weight-bold mt-1 mb-3">Reseller</h4>
-          
-              <!-- Triggering button -->
-            </div>
-            <div class="card-body">
-              <!-- Content -->
-              <div class="reseller1">
-              <hr>
-              <p style="font-size:18px">The reseller purchases the host's services and then sells them to customers, possibly for a profit.
-              </p>
-              <hr>
-            </div>
-              <!-- Triggering button -->
-            </div>
-    </div>
-          </div>
-        </div>
-</section>
-</div>
-    <!-- Optional JavaScript -->
+ 
     <section>
+      <br>
+      <!--vvvv-->
   <ul class="carousel">
     <li class="items main-pos" id="1"><p>1</p></li>
     <li class="items right-pos" id="2"><p>2</p></li>
@@ -654,10 +870,7 @@ li p {
     <li class="items back-pos" id="6"><p>6</p></li>
     <li class="items left-pos" id="7"><p>7</p></li>
   </ul>
-<span class="button">
-  <input type="button" value="Prev" id="prev">
-  <input type="button" value="Next" id="next">
-</span>
+
 </section>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
    <div class="footer-basic" style="color:rgb(255,255,255);padding:20px ;">
@@ -666,9 +879,8 @@ li p {
             <div class="social"><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a><a href="https://www.snapchat.com/"><i class="fa fa-snapchat"></i></a><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></div>
             <ul class="list-inline">
 
-                <li class="list-inline-item"><a href="homepage.html">Home</a></li>
+                <li class="list-inline-item"><a href="homefinal.html">Home</a></li>
                 <li class="list-inline-item"><a href="Services.html">Services</a></li>
-                <li class="list-inline-item"><a href="info.html">Info</a></li>
                 <li class="list-inline-item"><a href="terms.html">Terms</a></li>
                 <li class="list-inline-item"><a href="privacypolicy.html">Privacy Policy</a></li>
             </ul>
@@ -682,43 +894,42 @@ li p {
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <script>
-
         window.sr = ScrollReveal();
         sr.reveal('.navbar', {
           duration: 2000,
           origin:'top'
         });
 
-        sr.reveal('.script', {
+        sr.reveal('.card--4', {
           duration: 2000,
           origin:'botom',
           distance:'30px'
         });
-         sr.reveal('.script1', {
+         sr.reveal('.card--3', {
           duration: 2000,
           origin:'top',
           distance:'30px'
         });
 
 
-        sr.reveal('.robux', {
+        sr.reveal('.card--2', {
           duration: 2000,
           origin:'top',
           distance:'30px'
         });
-        sr.reveal('.robux1', {
+        sr.reveal('.card--5', {
           duration: 2000,
           origin:'top',
           distance:'30px'
         });
 
 
-        sr.reveal('.reseller', {
+        sr.reveal('.card--1', {
           duration: 2000,
           origin:'top',
           distance:'30px'
         });
-         sr.reveal('.reseller1', {
+         sr.reveal('.card--6', {
          duration: 2000,
           origin:'top',
           distance:'30px'
@@ -729,6 +940,11 @@ li p {
 
         });
           sr.reveal('.maincon', {
+          duration: 3000,
+          origin:'top'
+
+        });
+        sr.reveal('.carousel', {
           duration: 3000,
           origin:'top'
 
@@ -747,17 +963,14 @@ $('ul, span').hover(
 });
 
 //global variables
-var items = [];
+
 var startItem = 1;
 var position = 0;
 var itemCount = $('.carousel li.items').length;
 var leftpos = itemCount;
 var resetCount = itemCount;
 
-//unused: gather text inside items class
-$('li.items').each(function(index) {
-    items[index] = $(this).text();
-});
+
 
 //swap images function
 function swap(action) {

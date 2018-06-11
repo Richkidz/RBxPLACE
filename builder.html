@@ -1,109 +1,162 @@
 <!DOCTYPE html>
+
 <html>
-
 <head>
-   <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    
+   <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-      
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/solid.css" integrity="sha384-Rw5qeepMFvJVEZdSo1nDQD5B6wX0m7c5Z/pLNvjkB14W6Yki1hKbSEQaX9ffUbWe" crossorigin="anonymous">
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/fontawesome.css" integrity="sha384-GVa9GOgVQgOk+TNYXu7S/InPTfSDTtBalSgkgqQ7sCik56N9ztlkoTr2f/T44oKV" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Han+Sans">
+      <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-     <title>RBX.HIRE</title>
-   
-    <style type="text/css">
-        .article-list {
-  color:#313437;
-  background-color:#fff;
+      <title>RBX.HIRE</title>
+	<style type="text/css">
+:root {
+  --wrap-bg-color: #333;
+  --left-bg-color: rgba(223, 39, 39, 0.7);
+  --left-push-hover-color: rgba(161, 11, 11, 0.3);
+  --right-bg-color: rgba(43, 43, 43, 0.8);
+  --right-push-hover-color: rgba(92, 92, 92, 0.3);
+  --hover-width: 75%;
+  --other-width: 25%;
+  --speed: 1000ms;
 }
 
-.article-list p {
-  color:#7d8285;
+html, body {
+  padding:0;
+  margin:0;
+
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
-.article-list h2 {
-  font-weight:bold;
-  margin-bottom:40px;
-  padding-top:40px;
-  color:inherit;
+h1 {
+  font-size: 4rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
 }
 
-@media (max-width:767px) {
-  .article-list h2 {
-    margin-bottom:25px;
-    padding-top:25px;
-    font-size:24px;
+.push {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  height: 4rem;
+  padding-top: 1rem;
+  width: 15rem;
+  text-align: center;
+  color: #ffffff;
+  border: #fff solid 0.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: translateX(-50%);
+}
+
+.split.left .push:hover {
+  background-color: var(--left-push-hover-color);
+  border-color: var(--left-push-hover-color);
+}
+
+.split.right .push:hover {
+  background-color: var(--right-push-hover-color);
+  border-color: var(--right-push-hover-color);
+}
+
+.wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--wrap-bg-color);
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.split.left {
+  left:0;
+  background: url('https://images.pexels.com/photos/268362/pexels-photo-268362.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') center center no-repeat;
+  background-size: cover;
+}
+
+.split.left:before {
+  position:absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--left-bg-color);
+}
+
+.split.right {
+  right:0;
+  background: url('https://image.ibb.co/m3ZbRb/programmer.png') center center no-repeat;
+  background-size: cover;
+}
+
+.split.right:before {
+  position:absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--right-bg-color);
+}
+
+.split.left, .split.right, .split.right:before, .split.left:before {
+  transition: var(--speed) all ease-in-out;
+}
+
+.hover-left .left {
+  width: var(--hover-width);
+}
+
+.hover-left .right {
+  width: var(--other-width);
+}
+
+.hover-left .right:before {
+  z-index: 2;
+}
+
+
+.hover-right .right {
+  width: var(--hover-width);
+}
+
+.hover-right .left {
+  width: var(--other-width);
+}
+
+.hover-right .left:before {
+  z-index: 2;
+}
+
+@media(max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .push {
+    width: 12rem;
   }
 }
 
-.article-list .intro {
-  font-size:16px;
-  max-width:500px;
-  margin:0 auto;
-}
-
-.article-list .intro p {
-  margin-bottom:0;
-}
-
-.article-list .articles {
-  padding-bottom:40px;
-}
-
-.article-list .item {
-  padding-top:50px;
-  min-height:425px;
-  text-align:center;
-}
-
-.article-list .item .name {
-  font-weight:bold;
-  font-size:16px;
-  margin-top:20px;
-  color:inherit;
-}
-
-.article-list .item .description {
-  font-size:14px;
-  margin-top:15px;
-  margin-bottom:0;
-}
-
-.article-list .item .action {
-  font-size:24px;
-  width:24px;
-  margin:22px auto 0;
-  line-height:1;
-  display:block;
-  color:#4f86c3;
-  opacity:0.85;
-  transition:opacity 0.2s;
-  text-decoration:none;
-}
-
-.article-list .item .action:hover {
-  opacity:1;
-}
-
-@media (min-width: 768px) {
-  .description {
-    word-wrap:break-word;
+@media(max-height: 700px) {
+  .push {
+    top: 70%;
   }
 }
 
-.description {
-  word-wrap:break-word;
-}
-
-.img:hover{
-text-decoration: underline;
-border: 5px black;
-}
  body{
         background-color:#ffffff;
         max-width:100%;
@@ -113,7 +166,8 @@ border: 5px black;
           text-align:center;
           font-family: 'Black Han Sans', sans-serif;
           letter-spacing: 6px;
-          font-size:50px;
+          font-size: 50px;
+       
         }
         .row{
           text-align:center;
@@ -122,11 +176,10 @@ border: 5px black;
         }
        nav{
          color: white;
+         margin:0px;
          padding:3px;
        }
-      .homelink a{
-        color:rgb(0,0,0);
-      }
+  
       .footer-basic {
         padding:40px 0;
         background-color:#262626;
@@ -220,6 +273,9 @@ border: 5px black;
       .navigation-clean-search .navbar-brand:hover {
         color:#222;
       }
+      .homelink a{
+        color:rgb(0,0,0);
+      }
       .navigation-clean-search .navbar-toggler {
         border-color:#ddd;
       }
@@ -262,7 +318,7 @@ border: 5px black;
         background-color:transparent;
       }
       
-      .navigation-clean-search .action-button, .navigation-clean-button .action-button:active {
+      .navigation-clean-search .action-push, .navigation-clean-push .action-push:active {
         background:#56c6c6;
         border-radius:20px;
         font-size:inherit;
@@ -274,7 +330,7 @@ border: 5px black;
         transition:background-color 0.25s;
       }
       
-      .navigation-clean-search .action-button:hover, .navigation-clean-search .action-button:focus {
+      .navigation-clean-search .action-push:hover, .navigation-clean-search .action-push:focus {
         background:#66d7d7;
       }
       
@@ -303,30 +359,6 @@ border: 5px black;
       .navigation-clean-search .form-inline .search-field:focus {
         border-bottom:1px solid #ccc;
       }
-      
-      .jumbotron{
-      margin:20px;
-      width:98%;
-      position:absolute;
-      top:190px;
-      opacity:1;
-      }
-      .container-nolink a{
-        color:#3a3a3a;
-        max-width:100%;
-      }
-      .col-md-4:hover{
-        border: 2px solid black;
-        
-      }
-      .card-body{
-          padding:0px;}
-      .avatar {
-          margin:4px;
-      }
-      a:hover{
-        text-decoration:none;
-      }
       .fa {
         position:relative;
         bottom:2px;
@@ -334,120 +366,50 @@ border: 5px black;
       .fa fa-snapchat {
         font-size:35px;
       }
-      .col-md-4{
-        width:100%;
-        text-align:center;
-      }
-      .col-md-4 a{ 
-        cursor: pointer; 
-      }
-      @media (max-width:767px) {
-        .jumbotron{
-          position: absolute;
-          top:265px;
-          max-width:92%;
+    a:hover{
+    	color: white;
+    	text-decoration: none;
+    }
+       
+        .col-md-6{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            height: 45px;
+            padding-top: 7px;
         }
-    
-        .article-list {
-  color:#313437;
-  background-color:#fff;
+        .col-md-6:hover{
+
+border: 2px solid black;
+        }
+        .col-md-6{
+            margin-top: 5px;
+            height: 45px;
+        }
+        .col-md-6:hover{
+box-sizing: inherit;
+border: 2px solid black;
+-webkit-box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.5);
+box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.5);
+        }
+
+.col-md-6{
+  border-right: 1px solid black;
+  border-left:1px solid black;
+border-opacity:0.1;
 }
-
-.article-list p {
-  color:#7d8285;
+.text-center{
+    font-size: 20px;
+    color: rgb(0,0,0);
+    background-color: #ffffff;
 }
-
-.article-list h2 {
-  font-weight:bold;
-  margin-bottom:40px;
-  padding-top:40px;
-  color:inherit;
-}
-
-@media (max-width:767px) {
-  .article-list h2 {
-    margin-bottom:25px;
-    padding-top:25px;
-    font-size:24px;
-  }
-}
-
-.article-list .intro {
-  font-size:16px;
-  max-width:500px;
-  margin:0 auto;
-}
-
-.article-list .intro p {
-  margin-bottom:0;
-}
-
-.article-list .articles {
-  padding-bottom:40px;
-}
-
-.article-list .item {
-  padding-top:50px;
-  min-height:425px;
-  text-align:center;
-}
-
-.article-list .item .name {
-  font-weight:bold;
-  font-size:16px;
-  margin-top:20px;
-  color:inherit;
-}
-
-.article-list .item .description {
-  font-size:14px;
-  margin-top:15px;
-  margin-bottom:0;
-}
-
-.article-list .item .action {
-  font-size:24px;
-  width:24px;
-  margin:22px auto 0;
-  line-height:1;
-  display:block;
-  color:#4f86c3;
-  opacity:0.85;
-  transition:opacity 0.2s;
-  text-decoration:none;
-}
-
-.article-list .item .action:hover {
-  opacity:1;
-}
-
-@media (min-width:1206px) {
-  .description {
-word-break: break-all;
-    
-
-  }
-}
-
-.description {
-word-break: break-all;
-
-}
-.description{
-  width:100%;
-}
-
-    </style>
+	</style>
 </head>
- 
-
-
 <body>
-
  <!-- FIRST NAV -->
      <div>
         <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search" style=background-color:#262626;>
-            <div class="container"><a class="navbar-brand" href="homepage.html" style="color:rgb(255,255,255);">RBX.HIRE</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <a class="navbar-brand" href="homefinal.html" style="color:rgb(255,255,255);">RBX.HIRE</a><push class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></push>
                 <div
                     class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav mr-auto"></ul>
@@ -462,80 +424,80 @@ word-break: break-all;
               </div>
             </div>
          </nav>
-      </div>
-    <!-- SECOND NAV -->
-    <!-- SECOND NAV -->
-    <!-- SECOND NAV -->
-<div class="homelink">
-  <a href="homepage.html">
-<center> <h1>RBX.HIRE</h1></center>
-  </a>
-</div>
-    <div style="background-color:#ffffff;margin:7px;">
-        <div class="container-nolink">
+     <!--1st nav-->
+     <!--second nav-->
+        <div class="container-fluid">
             <div class="row">
-            
-            
-                 <div class="col-md-4" onclick="location.href='hire-page.html';" onmouseover="" style="cursor: pointer;">
-                     <p class="text-center" style="font-size:20px;cursive;color:rgb(0,0,0);background-color:#ffffff;">Hire</p>
+                <div class="col-md-6">
+                   
+
+
+    <a onclick="location.href='robux-page.html';"><p class="text-center">Robux</p></a>
+  
+
+
                 </div>
-               
-               
-            
-                
-                <div class="col-md-4" onclick="location.href='robux-page.html';" onmouseover="" style="cursor: pointer;">
-                    <p class="text-center" style="font-size:20px;cursive;color:rgb(0,0,0);background-color:#ffffff;">Robux</p>
+                <div class="col-md-6" onclick="location.href='builder.html';">
+                    <p class="text-center">Hire</p>
                 </div>
-               
-                
             
-                <div class="col-md-4" onclick="location.href='about-page.html';" onmouseover="" style="cursor: pointer;">
-                    <p class="text-center" style="font-size:20px;cursive;color:rgb(0,0,0);">About</p>
-                </div>
-                
             </div>
         </div>
     </div>
-    <!-- WELCOME MESSAGE -->
-    <div class="article-list">
-        <div class="container">
-            <div class="row articles">
-                <div class="col-sm-6 col-md-3 col-xl-12 item"><a href="#"><img class="img-fluid" src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png" style="width:250px;"></a>
-                    <h3 class="name">Builder Name</h3>
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus sint maiores veritatis quidem laudantium corporis, ut provident facilis quam pariatur animi obcaecati consequatur, quod officiis nesciunt necessitatibus odit sunt porro?</p><a href="#"
-                        class="action"><i class="fas fa-arrow-circle-right"></i></a></div>
-                <div class="col-sm-6 col-md-3 col-xl-12 item"><a href="#"><img class="img-fluid" src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png" style="width:250px;"></a>
-                    <h3 class="name">Builder Name</h3>
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus sint maiores veritatis quidem laudantium corporis, ut provident facilis quam pariatur animi obcaecati consequatur, quod officiis nesciunt necessitatibus odit sunt porro?</p><a href="#"
-                        class="action"><i class="fas fa-arrow-circle-right"></i></i></a></div>
-                <div class="col-sm-6 col-md-3 col-xl-12 item"><a href="#"><img class="img-fluid" src="https://issues.adblockplus.org/raw-attachment/ticket/3888/167x167-01-01.png" style="width:250px;"></a>
-                    <h3 class="name">Builder Name</h3>
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus sint maiores veritatis quidem laudantium corporis, ut provident facilis quam pariatur animi obcaecati consequatur, quod officiis nesciunt necessitatibus odit sunt porro?</p><a href="#"
-                        class="action"><i class="fas fa-arrow-circle-right"></i></a></div>
-            </div>
-        </div>
-    </div>
-   
- <!-- FOOTER -->  
+<!--endsec-->
+
+<div class="wrap">
+  <div class="split left">
+    <h1>Builder</h1>
+    <a href="hirebuilder.html" class="push" style="font-size: 20px">Hire</a>
+  </div>
+  <div class="split right">
+    <h1>Scripter</h1>
+    <a href="hirescripter.html" class="push" style="font-size: 20px;">Hire</a>
+  </div>
+</div>
+
+<!-- FOOTER -->  
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
    <div class="footer-basic" style="color:rgb(255,255,255);padding:20px ;">
-       <footer>
+        <footer>
           <!-- SOCIAL MEDIA -->
             <div class="social"><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a><a href="https://www.snapchat.com/"><i class="fa fa-snapchat"></i></a><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></div>
             <ul class="list-inline">
 
-                <li class="list-inline-item"><a href="homepage.html">Home</a></li>
+                <li class="list-inline-item"><a href="homefinal.html">Home</a></li>
                 <li class="list-inline-item"><a href="Services.html">Services</a></li>
-                <li class="list-inline-item"><a href="info.html">Info</a></li>
                 <li class="list-inline-item"><a href="terms.html">Terms</a></li>
                 <li class="list-inline-item"><a href="privacypolicy.html">Privacy Policy</a></li>
             </ul>
             <p class="copyright">Rbx.Hire © Copyright 2018</p>
         </footer>
     </div>
-  </body>
+
+    
+<script type="text/javascript">
+const left = document.querySelector(".left");
+const right = document.querySelector(".right");
+const wrap = document.querySelector(".wrap");
+
+left.addEventListener("mouseenter", () => {
+  wrap.classList.add("hover-left");
+});
+
+left.addEventListener("mouseleave", () => {
+  wrap.classList.remove("hover-left");
+});
+
+right.addEventListener("mouseenter", () => {
+  wrap.classList.add("hover-right");
+});
+
+right.addEventListener("mouseleave", () => {
+  wrap.classList.remove("hover-right");
+});
+
+</script>
+</body>
 </html>
