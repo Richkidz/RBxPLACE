@@ -32,6 +32,12 @@
          color: white;
          padding:3px;
        }
+       .navbar{
+         position:fixed;
+         top:0px;
+         width:100%;
+         z-index:1;
+       }
       .homelink a{
         color:rgb(0,0,0);
       }
@@ -110,6 +116,7 @@
         box-shadow:none;
         border:none;
         margin-bottom:0;
+        
       }
       
       @media (min-width:768px) {
@@ -249,7 +256,7 @@
         cursor: pointer; 
   
         }
-img {
+.robux img {
   display:block;
   margin-left:auto;
   margin-right:auto;
@@ -300,7 +307,7 @@ body {
   width:100%;
 }
         .col-md-6{
-            margin-top: 5px;
+            margin-top: 6px;
             height: 45px;
         }
         .col-md-6:hover{
@@ -312,15 +319,19 @@ box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.5);
         }
 
 .col-md-6{
-  border-right: 1px solid black;
-  border-left:1px solid black;
-border-opacity:0.1;
+  
+
 }
 .text-center{
     font-size: 20px;
     color: rgb(0,0,0);
     background-color: #ffffff;
 }
+.menu_links {
+  cursor: pointer; 
+  
+}
+
     </style>
   </head>
   <body>
@@ -343,12 +354,15 @@ border-opacity:0.1;
             </div>
          </nav>
       </div>
+      <br>
+      <br>
+      <br>
     <!-- SECOND NAV -->
    
 <!--second nav-->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 menu_links" onmouseover="" style="cursor: pointer" onclick="location.href"='robux-page.html'>
                    
 
 
@@ -357,20 +371,21 @@ border-opacity:0.1;
 
 
                 </div>
-                <div class="col-md-6" onclick="location.href='builder.html';">
-                    <p class="text-center">Hire</p>
+
+                <div class="col-md-6 menu_links" onmouseover="" style="cursor: pointer" onclick="location.href"='builder.html'>
+                    <a onclick="location.href='builder.html';"><p class="text-center">Hire</p></a>
                 </div>
-            
             </div>
         </div>
     </div>
 
     <!-- WELCOME MESSAGE -->
+    
     <!--forum-->
     <br>
     <div class="container">
     <div class="row">
-        <div class="col-sm-6"></div>
+        <div class="col-sm-6 menu_links" onmouseover="" style="cursor: pointer; "></div>
          <div class="logg">
         <form method="post">
                <input class="form-control" type="text" name="email" placeholder="In-game Username" style="margin:0px 0px 15px ;">
@@ -384,26 +399,26 @@ border-opacity:0.1;
      <div style="margin:10px;">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="img/robux.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
-                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="img/robux.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
-                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="img/robux.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
-                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="img/robux.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
-                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="img/robux.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
-                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="img/robux.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
-                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="img/robux.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
-                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="img/robux.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
-                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="img/robux.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
-                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="img/robux.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
-                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="img/robux.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
-                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="img/robux.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
-                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="img/robux.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
-                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="img/robux.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
-                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="img/robux.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
-                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="img/robux.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
-                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="img/robux.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
-                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="img/robux.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
-                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="img/robux.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
-                <div class="col-md-3 col-lg-3 col-xl-3" style="margin-bottom:10px;"><img src="img/robux.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3 robux" style="margin-bottom:10px;"><img src="img/item1.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3 robux" style="margin-bottom:10px;"><img src="img/item2.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3 robux" style="margin-bottom:10px;"><img src="img/item3.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3 robux" style="margin-bottom:10px;"><img src="img/item4.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3 robux" style="margin-bottom:10px;"><img src="img/item5.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3 robux" style="margin-bottom:10px;"><img src="img/item6.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3 robux" style="margin-bottom:10px;"><img src="img/item7.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3 robux" style="margin-bottom:10px;"><img src="img/item8.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3 robux" style="margin-bottom:10px;"><img src="img/item9.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3 robux" style="margin-bottom:10px;"><img src="img/item10.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3 robux" style="margin-bottom:10px;"><img src="img/item11.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3 robux" style="margin-bottom:10px;"><img src="img/item12.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3 robux" style="margin-bottom:10px;"><img src="img/item13.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3 robux" style="margin-bottom:10px;"><img src="img/item14.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3 robux" style="margin-bottom:10px;"><img src="img/item15.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3 robux" style="margin-bottom:10px;"><img src="img/item16.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3 robux" style="margin-bottom:10px;"><img src="img/item17.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3 robux" style="margin-bottom:10px;"><img src="img/item18.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3 robux" style="margin-bottom:10px;"><img src="img/item19.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
+                <div class="col-md-3 col-lg-3 col-xl-3 robux" style="margin-bottom:10px;"><img src="img/item20.png"><button class="btn btn-secondary btn-sm d-block" type="button">Buy</button></div>
             </div>
         </div>
     </div>
@@ -434,7 +449,16 @@ border-opacity:0.1;
                 <li class="list-inline-item"><a href="privacypolicy.html">Privacy Policy</a></li>
             </ul>
             <p class="copyright">Rbx.Hire © Copyright 2018</p>
+            <div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         </footer>
     </div>   
+    
+    
+
+
 </body>
 </html>
